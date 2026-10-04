@@ -1,0 +1,403 @@
+/* =========================
+   GENERAL
+========================= */
+
+body {
+
+    font-family: Arial, sans-serif;
+
+    margin: 0;
+
+    padding: 20px;
+
+    background-color: white;
+
+    color: #172033;
+
+    transition: 0.3s;
+
+}
+
+
+/* =========================
+   DARK THEME
+========================= */
+
+body.dark {
+
+    background-color: #101827;
+
+    color: white;
+
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+
+    background-color: #202c3d;
+
+    color: white;
+
+    padding: 15px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+}
+
+
+header h1 {
+
+    margin: 0;
+
+}
+
+
+/* Hamburger button */
+
+#hamburger {
+
+    background-color: #111827;
+
+    color: white;
+
+    border: none;
+
+    font-size: 28px;
+
+    padding: 8px 12px;
+
+    cursor: pointer;
+
+    border-radius: 6px;
+
+}
+
+
+/* =========================
+   HAMBURGER MENU
+========================= */
+
+#menu {
+
+    display: none;
+
+    background-color: #f5f5f5;
+
+    padding: 15px;
+
+    margin-bottom: 20px;
+
+}
+
+
+body.dark #menu {
+
+    background-color: #1f2937;
+
+}
+
+
+#menu.show {
+
+    display: block;
+
+}
+
+
+#menu a {
+
+    display: block;
+
+    padding: 10px;
+
+    color: #172033;
+
+    text-decoration: none;
+
+}
+
+
+body.dark #menu a {
+
+    color: white;
+
+}
+
+
+#menu a:hover {
+
+    background-color: #ddd;
+
+}
+
+
+/* =========================
+   THEME SECTION
+========================= */
+
+.theme-section {
+
+    padding: 25px;
+
+    margin-top: 20px;
+
+    border: 1px solid #ccd5e0;
+
+    border-radius: 10px;
+
+}
+
+
+#themeButton {
+
+    padding: 12px 20px;
+
+    border: none;
+
+    border-radius: 20px;
+
+    cursor: pointer;
+
+    font-size: 16px;
+
+    background-color: #202c3d;
+
+    color: white;
+
+}
+
+
+#themeMessage {
+
+    color: #667085;
+
+}
+
+
+/* =========================
+   MODAL
+========================= */
+
+.modal {
+
+    display: none;
+
+    position: fixed;
+
+    top: 0;
+
+    left: 0;
+
+    width: 100%;
+
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.75);
+
+    justify-content: center;
+
+    align-items: center;
+
+}
+
+
+.modal.show {
+
+    display: flex;
+
+}
+
+
+.modal-content {
+
+    background-color: white;
+
+    color: #172033;
+
+    width: 350px;
+
+    max-width: 80%;
+
+    padding: 25px;
+
+    border-radius: 10px;
+
+    position: relative;
+
+    border: 2px solid #1976ff;
+
+}
+
+
+.modal-close {
+
+    position: absolute;
+
+    right: 15px;
+
+    top: 10px;
+
+    border: none;
+
+    background: none;
+
+    font-size: 20px;
+
+    cursor: pointer;
+
+}
+
+
+#closeModalButton {
+
+    background-color: #e32929;
+
+    color: white;
+
+    border: none;
+
+    padding: 10px 20px;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+
+}
+
+
+/* =========================
+   FAQ
+========================= */
+
+.faq-item {
+
+    margin-bottom: 15px;
+
+}
+
+
+.faq-question {
+
+    background-color: #5eaccd;
+
+    color: black;
+
+    padding: 15px;
+
+    cursor: pointer;
+
+    font-weight: bold;
+
+}
+
+
+.faq-answer {
+
+    display: none;
+
+    padding: 15px;
+
+    background-color: #fafafa;
+
+    color: #222;
+
+    border-left: 3px solid #007BFF;
+
+}
+
+
+body.dark .faq-answer {
+
+    background-color: #263244;
+
+    color: white;
+
+}
+
+
+/* =========================
+   NOTIFICATION
+========================= */
+
+.banner {
+
+    background-color: #edf2aa;
+
+    border: 1px solid #cccccc;
+
+    padding: 10px;
+
+    margin: 20px 0;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+}
+
+
+#closeBanner {
+
+    cursor: pointer;
+
+}
+
+
+/* =========================
+   IMAGE SLIDER
+========================= */
+
+.slider {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 10px;
+
+    margin-top: 20px;
+
+}
+
+
+#slider-image {
+
+    width: 200px;
+
+    height: 200px;
+
+    object-fit: cover;
+
+}
+
+
+.size {
+
+    width: 200px;
+
+    height: 200px;
+
+}
+
+
+.slider button {
+
+    padding: 10px 15px;
+
+    cursor: pointer;
+
+    font-size: 20px;
+
+}

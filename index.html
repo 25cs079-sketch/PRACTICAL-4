@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <title>Student Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Student Portal</h1>
+        <button id="hamburger"
+                aria-label="Open menu"
+                aria-expanded="false">
+            ☰
+        </button>
+    </header>
+    <nav id="menu">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+    </nav>
+    <section class="theme-section">
+        <h2>Light / Dark Theme</h2>
+        <p>
+            Choose your preferred theme.
+        </p>
+        <button id="themeButton">
+            🌙 Dark / ☀ Light
+        </button>
+        <p id="themeMessage">
+            Theme choice can be remembered with localStorage.
+        </p>
+    </section>
+    <section class="modal-section">
+        <h2>Modal Popup</h2>
+        <button id="openModal">
+            Open Modal
+        </button>
+    </section>
+    <div id="modal"
+         class="modal"
+         role="dialog"
+         aria-modal="true"
+         aria-labelledby="modalTitle">
+        <div class="modal-content">
+            <button id="closeModal"
+                    class="modal-close"
+                    aria-label="Close modal">
+                ✖
+            </button>
+            <h2 id="modalTitle">
+                Modal Popup
+            </h2>
+            <p>
+                This is a JavaScript modal.
+                It can be opened and closed
+                using click events.
+            </p>
+            <button id="closeModalButton">
+                Close
+            </button>
+        </div>
+    </div>
+    <section>
+        <h2>FAQs</h2>
+        <div id="faq-container"></div>
+    </section>
+    <div id="notification"
+         class="banner">
+        <span>
+            This is a notification!
+        </span>
+        <button id="closeBanner"
+                aria-label="Close notification">
+            ✖
+        </button>
+    </div>
+    <section>
+        <h2>Image Slider</h2>
+        <div class="slider">
+            <button id="prev-btn"
+                    aria-label="Previous image">
+                ⟨
+            </button>
+            <div class="size">
+                <img id="slider-image"
+                     src="3.webp"
+                     alt="Student portal image">
+            </div>
+            <button id="next-btn"
+                    aria-label="Next image">
+                ⟩
+            </button>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
